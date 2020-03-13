@@ -1,0 +1,20 @@
+{
+  "name": "bench",
+  "version": "1.0.0",
+  "description": "Benchmark my libs against the greatest",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-modules --es-module-specifier-resolution=node index.mjs"
+  },
+  "keywords": [
+    "bench",
+    "press"
+  ],
+  "author": "Truman Purnell",
+  "license": "MIT",
+  "dependencies": {
+    "big-box": "^3.0.2",
+    "mathjs": "^6.6.1",
+    "ndarray": "^1.0.19"
+  }
+}
