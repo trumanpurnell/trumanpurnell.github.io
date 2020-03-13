@@ -1,2 +1,2 @@
 # benchpress
-Benchmarks my libraries against the industry standards
+Benchmarks my libraries against industry standards
