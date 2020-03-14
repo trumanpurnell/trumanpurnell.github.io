@@ -11,8 +11,8 @@ we find many a visualization tools, compilers, tensor libraries and Deep Learnin
 
 Cow is a concrete representation of three-dimensional space. Complete with a virtual camera and built atop WebGL, Cow is robust and efficient -- able to render over 10M pixels in real time. I built Cow due to the lack of competitive python visualization libraries: Matplotlib was choking on 100K pixels. Here we see a visualization of a 10MB image in pixel space:
 
-<iframe src="https://bb-labs.github.io/monet/" style="display: inline-block; width: 500; height: 375;"></iframe>
-<img src="https://bb-labs.github.io/monet/assets/img/sea.jpg" style="display: inline-block; width: 500; height: 375;"/>
+<iframe src="https://bb-labs.github.io/monet/" style="display: inline-block; width: 500px; height: 375px;"></iframe>
+<img src="https://bb-labs.github.io/monet/assets/img/sea.jpg" style="display: inline-block; width: 500px; height: 375px;"/>
 
 ## Big-Box
 
