@@ -1,6 +1,5 @@
-title: Minimal theme
-logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
+title: Truman's Tricks
+logo: /assets/img/16738805.jpeg
+description: This here is the visual counterpart to my resume. It includes demos and statistics that generally brag about me. Much of my work has centered on the creation of tools to help me visualize one mathematical concept or another. As such, this page quite important as a description of me and my work. Thanks for coming! 
 show_downloads: true
-google_analytics:
 theme: jekyll-theme-minimal
