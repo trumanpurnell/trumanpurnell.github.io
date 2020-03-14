@@ -1,0 +1,15 @@
+{% comment %} Header Navigation with Support for MailTo and External Links {% endcomment %}
+<div class="flex-l items-center mt3 mt0-l">
+  <nav class="nowrap overflow-x-auto">
+    {% for link in site.header_navigation %}
+      {% if link.url contains 'http' %}
+        {% assign domain = '' %}
+      {% elsif link.url contains 'mailto' %}
+        {% assign domain = '' %}
+      {% else %}
+        {% assign domain = site.url | append: site.baseurl %}
+      {% endif %}
+      <a href="{{ domain }}{{ link.url }}" class="black-80 hover-black-80 link f4 f5-l fw3 mr3 mt2" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a>
+    {% endfor %}
+  </nav>
+</div>
