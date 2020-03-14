@@ -1,68 +1,93 @@
-# Minimal Jekyll Theme (Beta v0.2.1)
+# The Minimal theme
 
-[![Gem Version](https://badge.fury.io/rb/minimal-jekyll-theme.svg)](https://badge.fury.io/rb/minimal-jekyll-theme)
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/desiredpersona/minimal-jekyll-theme/master/LICENSE.txt)
+[![Build Status](https://travis-ci.org/pages-themes/minimal.svg?branch=master)](https://travis-ci.org/pages-themes/minimal) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-minimal.svg)](https://badge.fury.io/rb/jekyll-theme-minimal)
 
-## This theme is currently in beta and not recommended for production use with Jekyll v4. For progress updates follow the [v1.0.0 Project](https://github.com/desiredpersona/minimal-jekyll-theme/projects).
+*Minimal is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://pages-themes.github.io/minimal), or even [use it today](#usage).*
 
-![Minimal Jekyll Theme - homepage layout](/screenshot.png)
-[Theme demo (Beta v0.2.0)](https://desiredpersona.github.io/minimal-jekyll-theme/)
+![Thumbnail of minimal](thumbnail.png)
 
-## Features
+## Usage
 
-- Compatible with Jekyll 3.5.x and GitHub Pages
-- System-fonts
-- Mobile first responsive design
-- Built with [Tachyons-sass](https://github.com/tachyons-css/tachyons-sass)
-- Multiple author support
-- Jekyll excerpt support
-- Social share icons
-- Header and footer navigation
-- Post header image with optional CTA
-- Multiple layouts including page, post, landing page, archives, categories and tags. [View layout demos](https://desiredpersona.github.io/minimal-jekyll-theme/docs/)
-- [Disqus comments](https://disqus.com/)
-- [Google Analytics](https://www.google.com/analytics/) async tracking.
-- Facebook Pixel
+To use the Minimal theme:
 
-## Plugin Dependencies
+1. Add the following to your site's `_config.yml`:
 
-- Atom feed via [Jekyll feed](https://github.com/jekyll/jekyll-feed)
-- Sitemap via [Jekyll sitemap](https://github.com/jekyll/jekyll-sitemap)
-- SEO via [Jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
-- Archive pages for year, month, day, categories and tags auto-generated via [Jekyll archives](https://github.com/jekyll/jekyll-archives)
+    ```yml
+    theme: jekyll-theme-minimal
+    ```
 
-## Installation
+2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
 
-Please read the [theme documentation](https://desiredpersona.github.io/minimal-jekyll-theme/docs/).
+    ```ruby
+    gem "github-pages", group: :jekyll_plugins
+    ```
 
 
-## Credits
 
-#### Creator
+## Customizing
 
-Desired Persona
+### Configuration variables
 
-- [https://desiredpersona.com](https://desiredpersona.com)
-- [https://twitter.com/desiredpersona](https://twitter.com/desiredpersona)
-- [https://github.com/desiredpersona](https://github.com/desiredpersona)
+Minimal will respect the following variables, if set in your site's `_config.yml`:
 
-#### Thanks
+```yml
+title: [The title of your site]
+description: [A short description of your site's purpose]
+```
 
-- [Jekyll](http://jekyllrb.com)
-- [Tachyons](http://tachyons.io)
-- [Tachyons background overlays](https://github.com/lowmess/tachyons-background-overlays) by Alec Lomas.
-- [SVG icons](https://dribbble.com/shots/1925069-Lynny-Icon-Set-Free) by Matthew Skiles.
-- [BrowserStack](https://www.browserstack.com) Live, Web-Based Browser Testing.
+Additionally, you may choose to set the following optional variables:
 
-[![browserstack.com](/browserstack-logo.png)](https://www.browserstack.com)
+```yml
+logo: [Location of the logo]
+show_downloads: ["true" or "false" to indicate whether to provide a download URL]
+google_analytics: [Your Google Analytics tracking ID]
+```
+
+### Stylesheet
+
+If you'd like to add your own custom styles:
+
+1. Create a file called `/assets/css/style.scss` in your site
+2. Add the following content to the top of the file, exactly as shown:
+    ```scss
+    ---
+    ---
+
+    @import "{{ site.theme }}";
+    ```
+3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
+
+### Layouts
+
+If you'd like to change the theme's HTML layout:
+
+1. [Copy the original template](https://github.com/pages-themes/minimal/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
+2. Create a file called `/_layouts/default.html` in your site
+3. Paste the default layout content copied in the first step
+4. Customize the layout as you'd like
+
+## Roadmap
+
+See the [open issues](https://github.com/pages-themes/minimal/issues) for a list of proposed features (and known issues).
+
+## Project philosophy
+
+The Minimal theme is intended to make it quick and easy for GitHub Pages users to create their first (or 100th) website. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at [https://github.com/desiredpersona/minimal-jekyll-theme](https://github.com/desiredpersona/minimal-jekyll-theme). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Interested in contributing to Minimal? We'd love your help. Minimal is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](docs/CONTRIBUTING.md) for instructions on how to contribute.
 
-## License
+### Previewing the theme locally
 
-[MIT](https://github.com/desiredpersona/minimal-jekyll-theme/blob/master/LICENSE.md)
+If you'd like to preview the theme locally (for example, in the process of proposing a change):
 
+1. Clone down the theme's repository (`git clone https://github.com/pages-themes/minimal`)
+2. `cd` into the theme's directory
+3. Run `script/bootstrap` to install the necessary dependencies
+4. Run `bundle exec jekyll serve` to start the preview server
+5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
 
+### Running tests
 
+The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` one before the test script will work.
