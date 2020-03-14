@@ -4,7 +4,7 @@
   "description": "Benchmark my libs against the greatest",
   "main": "index.js",
   "scripts": {
-    "test": "node --experimental-modules --es-module-specifier-resolution=node index.mjs"
+    "test": "node --experimental-modules index.mjs"
   },
   "keywords": [
     "bench",
@@ -15,6 +15,8 @@
   "dependencies": {
     "big-box": "^3.0.2",
     "mathjs": "^6.6.1",
-    "ndarray": "^1.0.19"
+    "ndarray": "^1.0.19",
+    "numjs": "^0.16.0",
+    "object.fromentries": "^2.0.2"
   }
 }

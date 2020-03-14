@@ -1,77 +1,66 @@
 # benchpress
 
-
 ## Random Array Creation:
-mathjs: 507.483ms   
-big-box: 144.347ms   
-
+mathjs: 710.838ms   
+big-box: 89.044ms   
+numjs: 98.539ms   
 
 ## Ones Array Creation:
-mathjs: 49.785ms   
-big-box: 11.786ms   
-
+mathjs: 49.439ms   
+big-box: 5.786ms   
+numjs: 51.870ms   
 
 ## Zeros Array Creation:
-mathjs: 70.579ms   
-big-box: 2.763ms   
-
+mathjs: 60.393ms   
+big-box: 1.285ms   
+numjs: 37.166ms   
 
 ## Range Array Creation:
-mathjs: 265.296ms   
-big-box: 8.022ms   
-
-
-## Complex Array Creation:
-mathjs: 91.710ms   
-big-box: 39.243ms   
-
+mathjs: 159.187ms   
+big-box: 14.712ms   
+numjs: 172.807ms   
 
 ## Literal Array Creation:
-mathjs: 1.339ms   
-big-box: 0.065ms   
-
+mathjs: 1.141ms   
+big-box: 0.087ms   
+numjs: 0.215ms   
 
 ## Sum:
-mathjs: 1986.916ms   
-big-box: 109.579ms   
-
+mathjs: 661.154ms   
+big-box: 24.788ms   
+numjs: 22.922ms   
 
 ## Mean:
-mathjs: 1063.721ms   
-big-box: 108.718ms   
-
+mathjs: 336.405ms   
+big-box: 25.306ms   
+numjs: 19.135ms   
 
 ## Min:
-mathjs: 793.750ms   
-big-box: 76.661ms   
-
+mathjs: 158.234ms   
+big-box: 20.660ms   
+numjs: 30.452ms   
 
 ## Max:
-mathjs: 717.059ms   
-big-box: 80.511ms   
-
+mathjs: 157.730ms   
+big-box: 22.281ms   
+numjs: 26.227ms   
 
 ## Add:
-mathjs: 395.496ms   
-big-box: 13.866ms   
-
+mathjs: 665.261ms   
+big-box: 15.892ms   
+numjs: 29.694ms   
 
 ## Subtract:
-mathjs: 736.430ms   
-big-box: 12.140ms   
-
+mathjs: 704.024ms   
+big-box: 13.244ms   
+numjs: 20.207ms   
 
 ## Multiply:
-mathjs: 460.860ms   
-big-box: 15.157ms   
-
+mathjs: 370.649ms   
+big-box: 15.469ms   
+numjs: 19.704ms   
 
 ## Divide:
-mathjs: 422.635ms   
-big-box: 17.208ms   
-
-
-## MatMult:
-mathjs: 2769.448ms   
-big-box: 549.985ms   
-
+mathjs: 654.055ms   
+big-box: 15.184ms   
+numjs: 19.585ms   

@@ -1,62 +1,83 @@
+import nj from 'numjs'
 import bb from 'big-box'
 import math from 'mathjs'
 import spec from './spec.mjs'
 
 export default [
     spec('Sum', function () {
-        const mine = bb.rand([1000, 1000, 50])
-        const your = math.random([1000, 1000, 50])
+        const bbr = bb.rand([1000, 1000, 10])
+        const njr = nj.random([1000, 1000, 10])
+        const mathr = math.random([1000, 1000, 10])
 
-        console.time('math')
-        math.sum(your)
-        console.timeEnd('math')
+        console.time('mathjs')
+        math.sum(mathr)
+        console.timeEnd('mathjs')
 
-        console.time('bb')
-        const op = new bb.cached.sum({ of: mine })
+        console.time('big-box')
+        const op = new bb.cached.sum({ of: bbr })
         op.invoke()
-        console.timeEnd('bb')
+        console.timeEnd('big-box')
+
+        console.time('numjs')
+        nj.sum(njr)
+        console.timeEnd('numjs')
     }),
 
     spec('Mean', function () {
-        const mine = bb.rand([1000, 1000, 50])
-        const your = math.random([1000, 1000, 50])
+        const bbr = bb.rand([1000, 1000, 10])
+        const njr = nj.random([1000, 1000, 10])
+        const mathr = math.random([1000, 1000, 10])
 
-        console.time('math')
-        math.mean(your)
-        console.timeEnd('math')
+        console.time('mathjs')
+        math.mean(mathr)
+        console.timeEnd('mathjs')
 
-        console.time('bb')
-        const op = new bb.cached.mean({ of: mine })
+        console.time('big-box')
+        const op = new bb.cached.mean({ of: bbr })
         op.invoke()
-        console.timeEnd('bb')
+        console.timeEnd('big-box')
+
+        console.time('numjs')
+        nj.mean(njr)
+        console.timeEnd('numjs')
     }),
 
     spec('Min', function () {
-        const mine = bb.rand([1000, 1000, 50])
-        const your = math.random([1000, 1000, 50])
+        const bbr = bb.rand([1000, 1000, 10])
+        const njr = nj.random([1000, 1000, 10])
+        const mathr = math.random([1000, 1000, 10])
 
-        console.time('math')
-        math.min(your)
-        console.timeEnd('math')
+        console.time('mathjs')
+        math.min(mathr)
+        console.timeEnd('mathjs')
 
-        console.time('bb')
-        const op = new bb.cached.min({ of: mine })
+        console.time('big-box')
+        const op = new bb.cached.min({ of: bbr })
         op.invoke()
-        console.timeEnd('bb')
+        console.timeEnd('big-box')
+
+        console.time('numjs')
+        nj.min(njr)
+        console.timeEnd('numjs')
     }),
 
     spec('Max', function () {
-        const mine = bb.rand([1000, 1000, 50])
-        const your = math.random([1000, 1000, 50])
+        const bbr = bb.rand([1000, 1000, 10])
+        const njr = nj.random([1000, 1000, 10])
+        const mathr = math.random([1000, 1000, 10])
 
-        console.time('math')
-        math.min(your)
-        console.timeEnd('math')
+        console.time('mathjs')
+        math.max(mathr)
+        console.timeEnd('mathjs')
 
-        console.time('bb')
-        const op = new bb.cached.max({ of: mine })
+        console.time('big-box')
+        const op = new bb.cached.max({ of: bbr })
         op.invoke()
-        console.timeEnd('bb')
+        console.timeEnd('big-box')
+
+        console.time('numjs')
+        nj.max(njr)
+        console.timeEnd('numjs')
     }),
 
 ]
