@@ -4,19 +4,18 @@ layout: default
 
 # Portfolio
 
-Here I present a few of the applications I've created in years past. Again,
-we find many a visualization tools, compilers, tensor libraries and Deep Learning demos. I truly seek to understand the concepts and principles beneath the mathematics and industry tools. Everything here is built from scratch.
+Here I present a few of the applications I've created in years past. We see visualization tools, compilers, tensor libraries and Deep Learning demos. I truly seek to understand the concepts and principles beneath the mathematics and industry tools. Everything here is built from scratch.
 
-## Cow
+## Monet
 
-Cow is a concrete representation of three-dimensional space. Complete with a virtual camera and built atop WebGL, Cow is robust and efficient -- able to render over 10M pixels in real time. I built Cow due to the lack of competitive python visualization libraries: Matplotlib was choking on 100K pixels. Here we see a visualization of a 10MB image in pixel space:
+Monet is a concrete representation of three-dimensional space. Complete with a virtual camera and built atop WebGL, Monet is robust and efficient -- able to render over 10M pixels in real time. I built Monet due to the lack of competitive python visualization libraries: Matplotlib was choking on 100K pixels. Here we see a visualization of a 10MB image in pixel space:
 
 <iframe src="https://bb-labs.github.io/monet/" style="display: inline-block; width: 500px; height: 375px;"></iframe>
 <img src="https://bb-labs.github.io/monet/assets/img/sea.jpg" style="display: inline-block; width: 500px; height: 375px;"/>
 
 ## Big-Box
 
-Big-Box is an efficient NumPy implementation in pure JavaScript. I needed a backend for Cow. It supports complex numbers and quaternions. Here we see key benchmarks against industry leaders:
+Big-Box is an efficient NumPy implementation in pure JavaScript. I needed a backend for Monet. It supports complex numbers and quaternions. Here we see key benchmarks against industry leaders:
 
 
 | Random   |
@@ -101,6 +100,8 @@ Big-Box is an efficient NumPy implementation in pure JavaScript. I needed a back
 
 ## Deep Demos
 
-Machine Learning over the past decade has simply exploded. Lagging behind, however, is the ability to learn from small or unlabeled datasets. I believe breakthroughs will arise as more inspiration is lifted from biology. This has been an evident trend. Neural Networks are more brain-like than their predecessors (SVMs and Logistic Units), and they peform better. Convolutional Networks are more eye-like: better performance. Our ears execute the fourier transform, so let's build some ear models on top of it. Below is a visualization of the top 100 fourier coefficients over time for simple utterances:
+Machine Learning over the past decade has exploded. Lagging behind, however, is the ability to learn from small or unlabeled datasets. I believe breakthroughs will arise as more inspiration is lifted from biology. This has been an evident trend. Neural Networks are more brain-like than their predecessors (SVMs, Logistic Units, etc.), and they peform better. Convolutional Networks are more eye-like: better performance. Our ears execute the fourier transform, so let's build some ear models on top of it. Below is a visualization of the top 100 fourier coefficients over time for simple utterances:
 
-IMAGE HERE
+<img src="https://bb-labs.github.io/kinder/assets/img/go.png" style="display: inline-block; width: 500px; height: 375px;"/>
+
+<video controls src="https://bb-labs.github.io/kinder/assets/video/co.mp4" width="500px" height="375px"></video>
