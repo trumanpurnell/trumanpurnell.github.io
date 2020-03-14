@@ -4,7 +4,7 @@ layout: default
 
 # Portfolio
 
-Here I present a few of the applications I've created over the past few years. Again,
+Here I present a few of the applications I've created over past few years. Again,
 we find many a visualization tools, compilers, tensor libraries and Deep Learning demos. I truly seek to understand the concepts and principles beneath the mathematics and industry tools. Everything here is built from scratch.
 
 ## Cow
