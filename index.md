@@ -6,16 +6,16 @@ layout: default
 
 Here I present a few of the applications I've created in years past. We see visualization tools, compilers, tensor libraries and Deep Learning demos. I truly seek to understand the concepts and principles beneath the mathematics and industry tools. Everything here is built from scratch.
 
-## Monet
+## Claude
 
-Monet is a concrete representation of three-dimensional space. Complete with a virtual camera and built atop WebGL, Monet is robust and efficient -- able to render over 10M pixels in real time. I built Monet due to the lack of competitive python visualization libraries: Matplotlib was choking on 100K pixels. Here we see a visualization of a 10MB image in pixel space:
+Claude is a concrete representation of three-dimensional space. Complete with a virtual camera and built atop WebGL, Claude is robust and efficient -- able to render over 10M pixels in real time. I built Claude due to the lack of competitive python visualization libraries: Matplotlib was choking on 100K pixels. Here we see a visualization of a 10MB image in pixel space:
 
-<iframe src="https://bb-labs.github.io/monet/" style="display: inline-block; width: 500px; height: 375px;"></iframe>
-<img src="https://bb-labs.github.io/monet/assets/img/sea.jpg" style="display: inline-block; width: 500px; height: 375px;"/>
+<iframe src="https://bb-labs.github.io/claude/" style="display: inline-block; width: 500px; height: 375px;"></iframe>
+<img src="https://bb-labs.github.io/claude/assets/img/sea.jpg" style="display: inline-block; width: 500px; height: 375px;"/>
 
 ## Big-Box
 
-Big-Box is an efficient NumPy implementation in pure JavaScript. I needed a backend for Monet. It supports complex numbers and quaternions. Here we see key benchmarks against industry leaders:
+Big-Box is an efficient NumPy implementation in pure JavaScript. I needed a backend for Claude. It supports complex numbers and quaternions. Here we see key benchmarks against industry leaders:
 
 
 | Random   |
