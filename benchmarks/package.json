@@ -16,7 +16,7 @@
     "big-box": "^3.0.2",
     "mathjs": "^6.6.1",
     "ndarray": "^1.0.19",
-    "numjs": "^0.16.0",
+    "numjs": "^0.16.1",
     "object.fromentries": "^2.0.2"
   }
 }
